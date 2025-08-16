@@ -6,26 +6,24 @@
     "race_jikkyo_comment_dict": "race_jikkyo_comment_dict.json",
     "race_jikkyo_message_dict": "race_jikkyo_message_dict.json",
     "assets_dir": "assets",
-    "extra_asset_bundle": {"windows": "includes"},
-    "replacement_font_name": "assets/rodinwanpakupro-umatl.otf",
-
-    "plural_form": "n == 1 ? 0 : 1",
-    "ordinal_form": "(((n+9)%10)<3 && ((n+90)%100)>10) ? ((n+9)%10) : 3",
-    "ordinal_types": ["$st", "$nd", "$rd", "$th"],
-    "months": ["Jan.", "Feb.", "Mar.", "Apr.", "May.", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."],
-    "month_text_format": "$(half) $(month)",
-
+    "extra_asset_bundle": {
+        "windows": "extrafont",
+        "android": "extra_asset_bundle_android"
+    },
     "text_wrapper": 1,
+	"months": ["Янв.", "Фев.", "Мар.", "Апр.", "Май.", "Июн.", "Июл.", "Авг.", "Сен.", "Окт.", "Ноя.", "Дек."],
+	"plural_form": "n == 1 ? 0 : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2)",
+    "ordinal_form": "n % 10 == 1 && n % 100 != 11 ? 0 : (n % 10 == 2 && n % 100 != 12 ? 1 : (n % 10 == 3 && n % 100 != 13 ? 2 : 3))",
+    "ordinal_types": ["-й", "-я", "-е", "-й"],
     "use_text_wrapper": true,
     "line_width_multiplier": 2,
-
     "auto_adjust_story_clip_length": true,
     "story_line_count_offset": 1,
-    "text_frame_line_spacing_multiplier": 0.7,
-    "text_frame_font_size_multiplier": 1.03,
-    "skill_list_item_desc_font_size_multiplier": 0.9,
-    "now_loading_comic_title_ellipsis": true,
-
+    "text_frame_line_spacing_multiplier": 1,
+    "text_frame_font_size_multiplier": 1,
+    "skill_list_item_desc_font_size_multiplier": 2,
+    "replacement_font_name": "assets/CNplusRU.otf",
+    "text_common_allow_overflow": false,
     "remove_ruby": true,
     "character_note_top_gallery_button": {
         "text": "    Training\nEvent Gallery",
