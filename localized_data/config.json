@@ -19,10 +19,10 @@
     "line_width_multiplier": 2,
     "auto_adjust_story_clip_length": true,
     "story_line_count_offset": 1,
-    "text_frame_line_spacing_multiplier": 1,
+    "text_frame_line_spacing_multiplier": 2,
     "text_frame_font_size_multiplier": 1,
-    "skill_list_item_desc_font_size_multiplier": 2,
-    "replacement_font_name": "assets/CNplusRU.otf",
+    "skill_list_item_desc_font_size_multiplier": 1,
+    "replacement_font_name": "assets/hybrid.otf",
     "text_common_allow_overflow": false,
     "remove_ruby": true,
     "character_note_top_gallery_button": {

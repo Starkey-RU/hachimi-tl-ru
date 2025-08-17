@@ -1,3 +1,5 @@
 /.vscode/settings.json
 /.venv
 __pycache__
+/localized_data/old_assets
+/localized_data/depric_hash_dict.json
